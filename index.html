@@ -24,14 +24,14 @@
   <p class="meta">Effective Date: November 17, 2026 &nbsp;|&nbsp; Last Updated: November 17, 2026</p>
 
   <h2>1. Introduction</h2>
-  <p>Device Info: CPU &amp; Hardware ("Device Info", "we", "our", or "the app") respects your privacy. This policy explains what information the Android app reads, how it is used, and which third-party services process data. The app is built to work on your device: the hardware, system, network and app details it shows are read and displayed locally and are never sent to any server operated by us. We do not run any servers for this app.</p>
+  <p>Device Info - CPU &amp; Hardware ("Device Info", "we", "our", or "the app") respects your privacy. This policy explains what information the Android app reads, how it is used, and which third-party services process data. The app is built to work on your device: the hardware, system, network and app details it shows are read and displayed locally and are never sent to any server operated by us. We do not run any servers for this app.</p>
 
   <h2>2. Summary at a Glance</h2>
   <ul>
     <li>No account, sign-up or login. We do not collect your name, email, phone number, contacts, photos or files.</li>
     <li>Device, hardware, battery, sensor, network and installed-app details are read and shown on your device only.</li>
     <li>Location permission is <strong>optional</strong> and is used only so Android will show the connected Wi-Fi name. The app never reads, stores or sends your location.</li>
-    <li>The list of installed apps is read to power the App Inspector and never leaves your device.</li>
+    <li>The list of apps in your launcher is read to power the App Inspector and never leaves your device.</li>
     <li>Settings (theme, temperature unit, test results) are stored locally and removed when you uninstall the app.</li>
     <li>Ads are served by Google AdMob, which may use the Advertising ID. Users in the EEA, UK and Switzerland are asked for consent first.</li>
     <li>Firebase Analytics and Crashlytics (Google) collect usage statistics and crash reports to improve the app.</li>
@@ -71,7 +71,8 @@
   </div>
 
   <h2>6. Installed Apps (App Inspector)</h2>
-  <p>The App Inspector lists the apps installed on your device and shows technical details about them, such as the framework they are built with (for example Flutter or React Native), target Android version, permissions and native libraries. This requires the <code>QUERY_ALL_PACKAGES</code> permission. The list is read on your device only, is not stored after you close the app and is never sent to us or to any third party.</p>
+  <p>The App Inspector lists the apps on your device that appear in your app launcher and shows technical details about them, such as the framework they are built with (for example Flutter or React Native), target Android version, permissions and native libraries. The app does not request the <code>QUERY_ALL_PACKAGES</code> permission. The list is read on your device only, is not stored after you close the app and is never sent to us or to any third party.</p>
+  <p>To show whether Advanced mode is available and whether the device is rooted, the app also checks if a small, fixed set of apps is installed (Shizuku and common root managers such as Magisk). This check happens on your device only.</p>
 
   <h2>7. Advanced Mode (Shizuku, Optional)</h2>
   <p>If you install and run the separate Shizuku app and grant Device Info access, Device Info can read extra system details (for example full camera sensor resolution from system diagnostics). These details are read on your device and are used only for display. Advanced mode is off unless you turn it on, and you can revoke access at any time in Shizuku.</p>
@@ -108,7 +109,6 @@
     <li><code>INTERNET</code>: loading ads and sending Firebase analytics and crash reports.</li>
     <li><code>ACCESS_NETWORK_STATE</code> / <code>ACCESS_WIFI_STATE</code>: reading connection type, Wi-Fi details and network speed.</li>
     <li><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code> (optional): required by Android to show the connected Wi-Fi name and router address. See Section 5.</li>
-    <li><code>QUERY_ALL_PACKAGES</code>: listing installed apps in the App Inspector. See Section 6.</li>
     <li><code>BLUETOOTH</code>: reading Bluetooth capabilities on older Android versions.</li>
     <li><code>VIBRATE</code>: the vibration motor hardware test.</li>
     <li><code>com.google.android.gms.permission.AD_ID</code>: Advertising ID for AdMob.</li>
@@ -128,7 +128,7 @@
 
   <hr />
   <footer>
-    <p>Device Info: CPU &amp; Hardware &ndash; Privacy Policy.</p>
+    <p>Device Info - CPU &amp; Hardware &ndash; Privacy Policy.</p>
   </footer>
 </body>
 </html>
