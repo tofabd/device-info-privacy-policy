@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light only" />
+  <title>Privacy Policy – Device Info</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 860px; margin: 0 auto; padding: 28px 22px 64px; line-height: 1.55; color: #1b1f23; background: #fafafa; }
+    h1,h2,h3 { line-height: 1.25; color:#111; }
+    h1 { margin-top: 0; }
+    code { background:#f1f3f5; padding:2px 5px; border-radius:4px; font-size:90%; word-break: break-word; }
+    a { color:#0b57d0; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    ul { margin:0 0 1em 1.2em; }
+    .meta { font-size: 0.95em; color:#444; margin: 4px 0 28px; }
+    .callout { background:#fff8e1; border-left:4px solid #f5b400; padding:12px 16px; border-radius:4px; margin:16px 0; }
+    hr { border:0; border-top:1px solid #e2e6ea; margin:32px 0; }
+    footer { margin-top:48px; font-size:0.85em; color:#555; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy – Device Info</h1>
+  <p class="meta">Effective Date: November 17, 2026 &nbsp;|&nbsp; Last Updated: November 17, 2026</p>
+
+  <h2>1. Introduction</h2>
+  <p>Device Info: CPU &amp; Hardware ("Device Info", "we", "our", or "the app") respects your privacy. This policy explains what information the Android app reads, how it is used, and which third-party services process data. The app is built to work on your device: the hardware, system, network and app details it shows are read and displayed locally and are never sent to any server operated by us. We do not run any servers for this app.</p>
+
+  <h2>2. Summary at a Glance</h2>
+  <ul>
+    <li>No account, sign-up or login. We do not collect your name, email, phone number, contacts, photos or files.</li>
+    <li>Device, hardware, battery, sensor, network and installed-app details are read and shown on your device only.</li>
+    <li>Location permission is <strong>optional</strong> and is used only so Android will show the connected Wi-Fi name. The app never reads, stores or sends your location.</li>
+    <li>The list of installed apps is read to power the App Inspector and never leaves your device.</li>
+    <li>Settings (theme, temperature unit, test results) are stored locally and removed when you uninstall the app.</li>
+    <li>Ads are served by Google AdMob, which may use the Advertising ID. Users in the EEA, UK and Switzerland are asked for consent first.</li>
+    <li>Firebase Analytics and Crashlytics (Google) collect usage statistics and crash reports to improve the app.</li>
+  </ul>
+
+  <h2>3. Information the App Reads (On-Device Only)</h2>
+  <p>To show your device's specifications, the app reads the following through standard Android APIs and system files. This information is displayed in the app and is not transmitted to us:</p>
+  <ul>
+    <li><strong>Device &amp; System:</strong> manufacturer, model, Android version, build details, kernel, security patch level, SELinux and root status, DRM (Widevine) level and media codecs.</li>
+    <li><strong>Hardware:</strong> processor and GPU details, live CPU frequencies, RAM and storage usage, display specifications, camera specifications, thermal status and sensor readings.</li>
+    <li><strong>Battery:</strong> level, charging status, current, voltage, temperature, health and cycle count where available.</li>
+    <li><strong>Network:</strong> connection type, Wi-Fi standard, band, channel, signal strength, link speed and security type; mobile network carrier name, network type and signal strength; local IP addresses, gateway and DNS servers; network traffic speed for the Live Monitor. The Wi-Fi network name (SSID) and router address (BSSID) are shown only if you grant location permission.</li>
+    <li><strong>Installed Apps:</strong> app names, package names, versions, install dates, target SDK, permissions, native libraries and signing certificate details, used by the App Inspector.</li>
+    <li><strong>Hardware Tests:</strong> touch input, volume key presses and sensor values are read only while you run a test. The app does not record audio, photos or video.</li>
+  </ul>
+  <p>The app includes offline databases of device marketing names and camera specifications. Looking up your model in these databases happens on your device and needs no internet connection.</p>
+
+  <h2>4. What We Do <em>Not</em> Collect</h2>
+  <ul>
+    <li>No name, email address, phone number, contacts, accounts, messages, photos or personal files.</li>
+    <li>No GPS coordinates or other location from your device's location services.</li>
+    <li>No IMEI, serial number or phone number. The app does not request the phone-state permission.</li>
+    <li>No microphone, camera image or video recording.</li>
+    <li>No browsing history and no content of your network traffic. The Live Monitor counts bytes only.</li>
+  </ul>
+
+  <h2>5. Location Permission (Optional)</h2>
+  <div class="callout">
+    <p>Android only reveals the name of the connected Wi-Fi network (SSID) and the router's hardware address (BSSID) to apps that hold the <code>ACCESS_FINE_LOCATION</code> or <code>ACCESS_COARSE_LOCATION</code> permission, because these identifiers could in theory be used to estimate location.</p>
+    <p>Device Info asks for this permission only when you tap <strong>"Show Wi-Fi name"</strong> in Hardware &rsaquo; Network. The app:</p>
+    <ul>
+      <li>Does <strong>not</strong> read GPS or any location coordinates.</li>
+      <li>Does <strong>not</strong> use Android's location services or the Fused Location Provider.</li>
+      <li>Does <strong>not</strong> store or transmit your location, Wi-Fi name or router address.</li>
+    </ul>
+    <p>If you decline, every other feature keeps working and the Wi-Fi name is shown as hidden.</p>
+  </div>
+
+  <h2>6. Installed Apps (App Inspector)</h2>
+  <p>The App Inspector lists the apps installed on your device and shows technical details about them, such as the framework they are built with (for example Flutter or React Native), target Android version, permissions and native libraries. This requires the <code>QUERY_ALL_PACKAGES</code> permission. The list is read on your device only, is not stored after you close the app and is never sent to us or to any third party.</p>
+
+  <h2>7. Advanced Mode (Shizuku, Optional)</h2>
+  <p>If you install and run the separate Shizuku app and grant Device Info access, Device Info can read extra system details (for example full camera sensor resolution from system diagnostics). These details are read on your device and are used only for display. Advanced mode is off unless you turn it on, and you can revoke access at any time in Shizuku.</p>
+
+  <h2>8. Sharing a Device Report</h2>
+  <p>Settings &rsaquo; Export lets you share a text report of your device's specifications through Android's share sheet. The report is only sent where you choose to send it. To protect your privacy, the report leaves out your Wi-Fi name, router address and IP addresses.</p>
+
+  <h2>9. Local Storage &amp; Retention</h2>
+  <ul>
+    <li><strong>Preferences:</strong> theme, temperature unit, hardware test results and similar settings are stored locally using Jetpack DataStore.</li>
+    <li><strong>Live data:</strong> live graphs (CPU, battery, temperature, network speed) are kept in memory only while the app is running.</li>
+    <li><strong>Deletion:</strong> all locally stored data is deleted when you clear the app's storage or uninstall the app. Your settings may be included in Android's own device backup if you have backup turned on.</li>
+  </ul>
+
+  <h2>10. Advertising (Google AdMob)</h2>
+  <p>The app shows ads from Google Mobile Ads (AdMob): banner ads, native ads and occasional full-screen (interstitial) ads. AdMob may collect and process:</p>
+  <ul>
+    <li>The Google Advertising ID (which you can reset or delete), IP address, device model, approximate location derived from the IP address, and ad interaction data, for ad delivery, measurement, frequency capping and fraud prevention.</li>
+  </ul>
+  <p>See the <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>. You can reset or delete your Advertising ID and limit ad personalization in Android Settings &rarr; Google &rarr; Ads, or at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</p>
+  <p><strong>EEA / UK / Switzerland:</strong> the app uses Google's User Messaging Platform (UMP), which follows the IAB Transparency &amp; Consent Framework, to ask for your consent before personalized ads are shown. You can change your choice at any time in the app's Settings &rsaquo; Privacy options.</p>
+
+  <h2>11. Firebase Analytics &amp; Crashlytics (Google)</h2>
+  <p>The app uses Firebase Analytics and Firebase Crashlytics to understand how features are used and to fix crashes. These services may collect:</p>
+  <ul>
+    <li>App usage events (for example screens opened and ad events), session information and app instance identifiers.</li>
+    <li>Crash reports with stack traces and the device state at the time of the crash.</li>
+    <li>Device model, Android version, app version, language and approximate country.</li>
+  </ul>
+  <p>This data is not used to identify you personally. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy and Security in Firebase</a> for details.</p>
+
+  <h2>12. Permissions Used</h2>
+  <ul>
+    <li><code>INTERNET</code>: loading ads and sending Firebase analytics and crash reports.</li>
+    <li><code>ACCESS_NETWORK_STATE</code> / <code>ACCESS_WIFI_STATE</code>: reading connection type, Wi-Fi details and network speed.</li>
+    <li><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code> (optional): required by Android to show the connected Wi-Fi name and router address. See Section 5.</li>
+    <li><code>QUERY_ALL_PACKAGES</code>: listing installed apps in the App Inspector. See Section 6.</li>
+    <li><code>BLUETOOTH</code>: reading Bluetooth capabilities on older Android versions.</li>
+    <li><code>VIBRATE</code>: the vibration motor hardware test.</li>
+    <li><code>com.google.android.gms.permission.AD_ID</code>: Advertising ID for AdMob.</li>
+  </ul>
+
+  <h2>13. Security</h2>
+  <p>The app runs inside Android's app sandbox. Because we do not run servers and do not collect personal data ourselves, there is no account or server-side database of yours that could be breached. Data sent to Google services is encrypted in transit.</p>
+
+  <h2>14. Children's Privacy</h2>
+  <p>Device Info is a general utility and is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+
+  <h2>15. Changes to This Policy</h2>
+  <p>We may update this policy when the app changes, when Android or Google Play requirements change, or when the law requires it. Changes will be posted on this page with a new "Last Updated" date.</p>
+
+  <h2>16. Contact</h2>
+  <p>Questions or concerns about this policy? Email us at <strong>tofa.du@gmail.com</strong>.</p>
+
+  <hr />
+  <footer>
+    <p>Device Info: CPU &amp; Hardware &ndash; Privacy Policy.</p>
+  </footer>
+</body>
+</html>
